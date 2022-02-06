@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+
+<style>
+    body {
+    font-family: sans-serif;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    background: darkgrey;
+}
+.container{
+    border: 4px solid whitesmoke;
+    margin: auto;
+    padding: 100px;
+    width: 1000px;
+    border-radius: 82px;
+}
+    
+.header{
+    text-align: center;
+    color: rgb(99, 98, 98);
+    font-size: 26px;
+    line-height: 19px;
+    padding: 20px;
+}
+.form-group input{
+    font-family: sans-serif;
+    display: inline-block;
+    width: 1000px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 2px 0px;
+}
+.form-group select{
+    font-family: sans-serif;
+    display: inline-block;
+    width: 1032px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 2px 0px;
+}
+.form-group textarea{
+    display: inline-block;
+    width: 1032px;
+    border-radius: 8px;
+    padding: auto;
+    margin: 2px 0px;
+}
+.form-group button{
+    display: inline-block;
+    width: 1033px;
+    padding: 13px;
+    margin: 18px 0px;
+    border-radius: 82px;
+}
+
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1>Webpage for form</h1>
+   </header>
+    
+    <div class="container">
+        <form action="notion.php">
+            <div class="form-group">
+                <h2>Name</h2>
+                <input type="text" name="Name" id="Name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <h2>Email</h2>
+                <input type="text" name="Email" id="Email" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <h2>Age</h2>
+                <input type="number" name="Age" id="Age" placeholder="Age" min="1" max="150">
+            </div>
+            <div class="form-group">
+               <h2>Which option best describes your current role?</h2>
+               <select name="role" id="role">
+                   <option value="">Select current role</option>
+                   <option value="x">x</option>
+                   <option value="y">y</option>
+                   <option value="z">z</option>
+                   <option value="q">q</option>
+               </select>
+            </div>
+            
+            <div class="form-group">
+                <h2>What is that one thing which excites you most about Webpage?</h2>
+                <select name="option" id="option">
+                    <option value="">Select an option</option>
+                    <option value="a">a</option>
+                    <option value="s">s</option>
+                    <option value="d">d</option>
+                    <option value="f">f</option>
+                </select>
+            </div>
+            <div class="form-group">
+            <h2>Any comments or suggestions?</h2>
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your comment here...."></textarea>
+                
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="alert('Your form has been submitted')">Submit</button>
+            </div>
+        </form>
+
+
+
+
+    </div>
+
+    
+    
+</body>
+</html>
